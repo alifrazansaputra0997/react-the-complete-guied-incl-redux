@@ -34,3 +34,34 @@ numberx => numberx * 3;
 
 // returning object
 numbery => ({ age: numbery })
+
+// Object could be cobination from varibales and function.
+const data = {
+    name: 'Alif',
+    age: 29,
+    greet() {
+        return "Hello World"
+    }
+}
+
+const data = {
+    name: 'Alif',
+    age: 29,
+    greeting: (name) => {
+        return "Hello" + name
+    }
+}
+
+
+class User {
+    constructor(name, age){
+      this.name = name;
+      this.age = age  
+    } // constructor will accept parameters
+
+    greet(){
+        console.log('HI')
+    }
+}
+
+const user1 = new User('alif', 29);
