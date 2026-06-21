@@ -65,3 +65,50 @@ class User {
 }
 
 const user1 = new User('alif', 29);
+
+// working with array
+const hobbies = ["Sprort", "Cooking", "Reading"];
+console.log(hobbies[0]);
+
+hobbies.push("Working");
+console.log(hobbies);
+
+const index = hobbies.findIndex((item) => {
+    return item === "Sprort"
+});
+
+console.log(index)
+
+// make it short 
+
+const index2 = hobbies.findIndex((item) === "Sprort")
+
+// array map, this function is could create array to new array
+
+const edittedHobbies = hobbies.map((item) => item + "!") 
+
+// use map again
+
+const edittedHobbies = hobbies.map((item) => ({
+    text: item
+}))
+
+// distructering sysntax
+// instead of creating new variable to get output data from several code, you could get the data by destructering the code like
+
+// example destructering of array
+const [firstName, lastName] = ['Alif', 'Saputra'] 
+
+// example destructering of object
+const {name, age} = {
+    name: 'Alif',
+    age: 29
+};
+
+// you also could set alias name
+const { name: userName, age} ={
+    name: 'Alif',
+    age: 29
+}
+
+console.log(userName)
