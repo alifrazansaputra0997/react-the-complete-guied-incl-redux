@@ -93,7 +93,7 @@ const edittedHobbies = hobbies.map((item) => ({
     text: item
 }))
 
-// distructering sysntax
+// distructering sysntax (direct pull out)
 // instead of creating new variable to get output data from several code, you could get the data by destructering the code like
 
 // example destructering of array
@@ -111,4 +111,17 @@ const { name: userName, age} ={
     age: 29
 }
 
-console.log(userName)
+// Separated Operator ...
+// pull out object or array
+
+const userObj = {
+    name: 'alif',
+    age: 23
+}
+
+console.log(...userObj)
+
+const dataArr = ["Reading"];
+console.log(...dataArr)
+
+console.log(userName) 
