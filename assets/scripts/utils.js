@@ -125,3 +125,23 @@ const dataArr = ["Reading"];
 console.log(...dataArr)
 
 console.log(userName) 
+
+// pass function as value to other function
+function handleTimeOut(){
+    console.log('Timeout')
+}
+const handleTimeOut2 = () =>{
+    console.log('Timeout2')
+}
+
+setTimeout(handleTimeOut, 200);
+setTimeout(handleTimeOut2, 200);
+
+// defining function inside of functions
+function init(){
+    function greet(){ // only available inside function init
+        console.log('HI')
+    }
+
+    greet();
+}
